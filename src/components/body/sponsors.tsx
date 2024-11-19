@@ -3,34 +3,56 @@ import BreadCrumb from "../common/bread-crumb";
 import Image from "next/image";
 import { oddvalSemiBold } from "@/app/fonts";
 import Magnetic from "../common/Magnetic";
+import { motion } from "framer-motion";
 
 export default function Sponsors() {
   return (
-    <section className="py-10 relative">
+    <section className="py-10 relative min-h-screen">
       <BreadCrumb title="Sponsors" />
       <div className="flex flex-col items-center gap-5 justify-center">
-        <p
+        <motion.p
           className={`text-3xl font-bold uppercase ${oddvalSemiBold.className}`}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           Title Sponsor
-        </p>
-        <Magnetic>
-          <Image
-            src="/pepsi.svg"
-            alt="Apple Music logo"
-            className="h-[200px] w-auto"
-            width={500}
-            height={500}
-          />
-        </Magnetic>
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          viewport={{ once: true, amount: 0.1 }}
+        >
+          <Magnetic>
+            <Image
+              src="/pepsi.svg"
+              alt="Apple Music logo"
+              className="h-[200px] w-auto"
+              width={500}
+              height={500}
+            />
+          </Magnetic>
+        </motion.div>
       </div>
       <div className="flex flex-col items-center gap-5 justify-center mt-10">
-        <p
+        <motion.p
           className={`text-xl font-bold uppercase ${oddvalSemiBold.className}`}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           Other Sponsors
-        </p>
-        <div className="flex items-center gap-10 justify-center">
+        </motion.p>
+        <motion.div
+          className="flex items-center gap-10 justify-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          viewport={{ once: true, amount: 0.1 }}
+        >
           <Magnetic>
             <Image
               src="/cyper.jpeg"
@@ -58,23 +80,8 @@ export default function Sponsors() {
               height={500}
             />
           </Magnetic>
-        </div>
+        </motion.div>
       </div>
-      {/* <div className="absolute bottom-10 left-1/2 max-w-full -translate-x-1/2">
-        <Dock className="items-end pb-3">
-          {imgData.map((item, idx) => (
-            <DockItem
-              key={idx}
-              className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800"
-            >
-              <DockLabel>{item.name}</DockLabel>
-              <DockIcon>
-                <img src={item.src} alt={item.alt} className="h-full w-auto" />
-              </DockIcon>
-            </DockItem>
-          ))}
-        </Dock>
-      </div> */}
     </section>
   );
 }

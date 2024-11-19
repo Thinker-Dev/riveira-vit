@@ -48,6 +48,34 @@
   top: 0;
 }
 
+.see-more {
+  position: relative;
+  overflow: visible;
+}
+
+.see-more::before,
+.see-more::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #93f2b1;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.see-more:hover::before {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.see-more:hover::after {
+  transform: translate(-50%, -50%) scale(1.4);
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -10,6 +10,10 @@ import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 import { useState } from "react";
 import Preloader from "@/components/preloader";
+import MeetTheTeam from "@/components/body/team/meet-the-team";
+import SeeMore from "@/components/body/see-more";
+import Proshow from "@/components/body/proshow";
+import SlidingImages from "@/components/SlidingImages";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,7 +44,10 @@ export default function Home() {
         <AboutVit />
         <AboutRiviera />
         <Sponsors />
+        <MeetTheTeam />
       </div>
+      <SeeMore />
+      <Proshow />
     </main>
   );
 }
