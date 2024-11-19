@@ -2,6 +2,8 @@ import { oddvalSemiBold, spaceGrotesk } from "@/app/fonts";
 import { juanaMedium } from "@/app/fonts";
 import Image from "next/image";
 import React from "react";
+import Magnetic from "@/components/common/Magnetic";
+import { Button } from "@/components/ui/button";
 
 export default function AboutRiviera() {
   return (
@@ -19,9 +21,11 @@ export default function AboutRiviera() {
           <h1
             className={`${oddvalSemiBold.className} text-4xl leading-[55px] text-end`}
           >
-            <span className="text-black bg-primary px-4 py-1 rounded-full">
-              Riviera
-            </span>{" "}
+            <Magnetic>
+              <span className="text-black bg-primary px-4 py-1 rounded-full">
+                Riviera
+              </span>
+            </Magnetic>{" "}
             Where{" "}
             <span className={`${juanaMedium.className} italic`}>
               Creativity

@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { oddvalRegular, oddvalSemiBold } from "@/app/fonts";
+import Magnetic from "../common/Magnetic";
 
 const Header = () => {
   return (
@@ -21,9 +22,11 @@ const Header = () => {
               <span className={`${oddvalRegular.className}`}>{item.title}</span>
             </Link>
           ))}
-          <Button size={"sm"} className={`${oddvalSemiBold.className}`}>
-            Events
-          </Button>
+          <Magnetic>
+            <Button size={"sm"} className={`${oddvalSemiBold.className}`}>
+              Events
+            </Button>
+          </Magnetic>
         </nav>
       </div>
     </header>

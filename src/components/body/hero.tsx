@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { oddvalRegular, oddvalSemiBold } from "@/app/fonts";
+import Magnetic from "../common/Magnetic";
 
 const Hero = () => {
   const router = useRouter();
@@ -30,34 +31,14 @@ const Hero = () => {
           29th Feb to 3rd March
         </div>
         <div className="flex gap-3 mt-10">
-          <Button className={`${oddvalSemiBold.className}`}>Register</Button>
-          <Button className={`${oddvalSemiBold.className}`}>
-            Proshow Entry
-          </Button>
-        </div>
-      </div>
-      <div className="z-10 space-y-5 flex justify-center flex-col items-center">
-        <div className="flex">
-          {/* <TooltipProvider>
-              {data?.image.map((item, index) => (
-                <div key={index} className="flex">
-                  <Tooltip delayDuration={0}>
-                    <TooltipTrigger>
-                      <Image
-                        width={100}
-                        height={100}
-                        alt={item.alt}
-                        className="w-10 h-10 grayscale hover:grayscale-0 duration-300 transition"
-                      />
-                    </TooltipTrigger>
-                    <TooltipContent side="bottom">
-                      <p className="capitalize">{item.alt}</p>
-                    </TooltipContent>
-                  </Tooltip>
-                  <div className="mx-2" />
-                </div>
-              ))}
-            </TooltipProvider> */}
+          <Magnetic>
+            <Button className={`${oddvalSemiBold.className}`}>Register</Button>
+          </Magnetic>
+          <Magnetic>
+            <Button className={`${oddvalSemiBold.className}`}>
+              Proshow Entry
+            </Button>
+          </Magnetic>
         </div>
       </div>
     </section>
