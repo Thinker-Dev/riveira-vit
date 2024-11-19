@@ -33,7 +33,7 @@ export default function AboutVit() {
               </span>{" "}
               at{" "}
               <motion.span
-                className="text-black bg-primary px-4 py-1 rounded-full"
+                className="text-black bg-[#FF82FE] px-4 py-1 rounded-full"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
@@ -66,7 +66,7 @@ export default function AboutVit() {
           initial={{ scale: 0.9 }}
           whileInView={{ scale: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <Image
             src="/craxy-img-1.png"
