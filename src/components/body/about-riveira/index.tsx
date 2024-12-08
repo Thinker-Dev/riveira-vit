@@ -88,7 +88,7 @@ export function AboutRiviera() {
             viewport={{ once: true, amount: 0.1 }}
             className={`${spaceGrotesk.className} text-base text-white/50 text-center max-w-3xl mx-auto leading-7 mt-7`}
           >
-            Welcome to Riviera, VIT's heart—a 4-day explosion of sports,
+            Welcome to Riviera, VIT&apos;s heart—a 4-day explosion of sports,
             culture, and unbridled enthusiasm! 36,000 students, 650+ colleges,
             and a whirlwind of events from dramatic face-offs to literary
             showdowns.

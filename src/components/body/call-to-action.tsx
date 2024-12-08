@@ -37,7 +37,7 @@ export default function CallToAction() {
             <div key={index} className="flex items-center gap-16">
               <span className="text-primary text-7xl">&#10038;</span>
               <span className="group-hover:text-primary transition-colors">
-                One of South Asia's Largest Cultural Carnival
+                One of South Asia&apos;s Largest Cultural Carnival
               </span>
             </div>
           ))}
