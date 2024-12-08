@@ -27,7 +27,7 @@ export default function SeeMore() {
         <div className="h-[1px] bg-primary/50 w-full" />
         <div
           ref={seeMoreRef}
-          className={`see-more absolute bottom-12 left-[75%] -translate-x-1/2 bg-background w-24 h-24 rounded-full border border-[#93F2B1] flex items-center justify-center flex-col ${oddvalLight.className}`}
+          className={`see-more absolute bottom-12 left-[75%] -translate-x-1/2 bg-background w-24 h-24 rounded-full border border-[#9333ea] flex items-center justify-center flex-col ${oddvalLight.className}`}
         >
           <span className="">See </span>
           <span className="">more</span>
