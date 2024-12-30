@@ -14,6 +14,7 @@ import { AboutRiviera } from "@/components/body/about-riveira";
 import Proshow from "@/components/body/proshow";
 import CallToAction from "@/components/body/call-to-action";
 import Footer from "@/components/footer";
+import Events from "@/components/body/events";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -36,12 +37,13 @@ export default function Home() {
       </AnimatePresence>
       <Navbar />
       <Hero />
-      <AboutVit />
-      <AboutRiviera />
-      <Sponsors />
+      {/* <AboutVit /> */}
+      {/* <AboutRiviera /> */}
+      {/* <Sponsors /> */}
+      {/* <SeeMore /> */}
+      {/* <Proshow /> */}
+      <Events />
       <MeetTheTeam />
-      <SeeMore />
-      <Proshow />
       <CallToAction />
       <Footer />
     </main>

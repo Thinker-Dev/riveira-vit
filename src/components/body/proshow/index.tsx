@@ -1,6 +1,8 @@
 import { oddvalSemiBold, spaceGrotesk } from "@/app/fonts";
 import ArtistsCol from "./integrations-col";
 import Tag from "@/components/common/tag";
+import { EventsGrid } from "../events/EventsGrid";
+import { events } from "@/lib/constants";
 
 const artists = [
   {
@@ -41,7 +43,7 @@ export type ArtistsProps = typeof artists;
 
 export default function Proshow() {
   return (
-    <section className="py-24 overflow-hidden max-w-screen-2xl mx-auto px-20">
+    <section className="py-24 overflow-hidden max-w-screen-2xl mx-auto px-20 bg-gradient-to-b from-black via-black to-purple-950/70 ">
       <div className="grid items-center lg:grid-cols-2 lg:gap-16">
         <div>
           <div className="mb-6">

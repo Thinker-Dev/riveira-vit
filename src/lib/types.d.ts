@@ -13,3 +13,14 @@ interface Navigation {
   title: string;
   path: string;
 }
+
+interface Event {
+  id: string;
+  title: string;
+  date: string;
+  location: string;
+  description: string;
+  imageUrl: string;
+  category: string;
+  price: number;
+}

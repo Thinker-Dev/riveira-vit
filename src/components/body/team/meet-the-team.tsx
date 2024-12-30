@@ -11,22 +11,22 @@ export default function MeetTheTeam() {
     {
       name: "Dr. G. Viswanathan",
       role: "Chancellor",
-      image: "/viswa.jpeg",
+      image: "/placeholder.jpg",
     },
     {
       name: "Mr. Sankar Viswanathan",
       role: "Vice President",
-      image: "/sankar.jpeg",
+      image: "/placeholder.jpg",
     },
     {
       name: "Dr. Sekar Viswanathan",
       role: "Vice President",
-      image: "/sekar.jpeg",
+      image: "/placeholder.jpg",
     },
     {
       name: "Dr. G V Selvam",
       role: "Vice President",
-      image: "/selvam.jpeg",
+      image: "/placeholder.jpg",
     },
   ];
 
@@ -47,7 +47,7 @@ export default function MeetTheTeam() {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-b from-purple-950 to-black">
+    <section className="py-24 bg-gradient-to-b from-purple-950/70 to-background">
       <div className="max-w-screen-2xl mx-auto px-20 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
